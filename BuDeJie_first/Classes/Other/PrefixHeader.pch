@@ -1,0 +1,50 @@
+//
+//  PrefixHeader.pch
+//  BuDeJie_first
+//
+//  Created by 张银龙 on 16/2/18.
+//  Copyright © 2016年 张银龙. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__ //判断当前文件是否是OC文件,是的话就把下面的东西复制进去
+
+#import "UIImage+YLCategory.h"
+#import "UIView+YLCategory.h"
+#import "UIBarButtonItem+YLBarButtonItem.h"
+#import <MBProgressHUD.h>
+#import <SVProgressHUD.h>
+#import "const.h"
+#import "UIImageView+YLCategory.h"
+
+
+//在宏当中多个参数...
+//函数中多个参数__VA_ARGS__
+#ifdef DEBUG
+#define YLLog(...) NSLog(__VA_ARGS__)
+#else
+#define YLLog(...)
+#endif /* #ifdef DEBUG */
+
+/*** 颜色 ***/
+#define YLColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define YLColor(r, g, b) YLColorA((r), (g), (b), 255)
+#define YLRandomColor YLColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+/***** 屏幕尺寸 ****************/
+#define YLScreenW [UIScreen mainScreen].bounds.size.width
+#define YLScreenH [UIScreen mainScreen].bounds.size.height
+
+/***** 屏幕适配 ****************/
+
+#define iPhone6P (YLScreenH == 736)
+#define iPhone6 (YLScreenH == 667)
+#define iPhone5 (YLScreenH == 568)
+#define iPhone4 (YLScreenH == 480)
+
+
+#endif /* #ifdef __OBJC__ */
+
+#endif /* PrefixHeader_pch */

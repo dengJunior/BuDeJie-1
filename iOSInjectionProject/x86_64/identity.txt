@@ -1,0 +1,2 @@
+/Users/zhangyinlong/Library/Developer/Xcode/DerivedData/BuDeJie_first-hckeksstuxfrsgbgxjjabfyudlak/Build/Products/Debug-iphonesimulator/BuDeJie_first.app
+iPhone Developer

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YLAdViewController">
+            <connections>
+                <outlet property="adView" destination="RcV-ay-7vR" id="n0f-hj-LOS"/>
+                <outlet property="jumpBtn" destination="Jkd-Jm-m9w" id="cNu-bC-XjW"/>
+                <outlet property="launchImage" destination="wKU-rt-IN0" id="n3C-Hp-fUT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wKU-rt-IN0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcV-ay-7vR" userLabel="广告 View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jkd-Jm-m9w">
+                    <rect key="frame" x="305" y="20" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="跳过(3)"/>
+                    <connections>
+                        <action selector="jumpClick:" destination="-1" eventType="touchUpInside" id="AER-pP-qJe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wKU-rt-IN0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HrJ-HG-S1d"/>
+                <constraint firstAttribute="trailing" secondItem="Jkd-Jm-m9w" secondAttribute="trailing" constant="20" id="JV1-Vb-tQe"/>
+                <constraint firstItem="RcV-ay-7vR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Odg-m9-ZI9"/>
+                <constraint firstItem="RcV-ay-7vR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TAg-9X-fIC"/>
+                <constraint firstItem="wKU-rt-IN0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UGV-fj-uKR"/>
+                <constraint firstAttribute="bottom" secondItem="RcV-ay-7vR" secondAttribute="bottom" id="Urp-aq-U65"/>
+                <constraint firstAttribute="bottom" secondItem="wKU-rt-IN0" secondAttribute="bottom" id="Wao-vb-Iqg"/>
+                <constraint firstAttribute="trailing" secondItem="RcV-ay-7vR" secondAttribute="trailing" id="YrT-yQ-Iq4"/>
+                <constraint firstAttribute="trailing" secondItem="wKU-rt-IN0" secondAttribute="trailing" id="cvi-wh-k1M"/>
+                <constraint firstItem="Jkd-Jm-m9w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="ilV-KH-618"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="303.5" y="305.5"/>
+        </view>
+    </objects>
+</document>
